@@ -53,3 +53,7 @@ const authConfig = {
 }
 
 export const { handlers, auth, signIn, signOut } = NextAuth(authConfig)
+
+// Export the handler for App Router
+export const GET = handlers
+export const POST = handlers
